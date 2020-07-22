@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "compare-angular": {
+    "copmare-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "sass"
         }
       },
       "root": "",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/compare-angular",
+            "outputPath": "dist/copmare-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.sass"
             ],
             "scripts": []
           },
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "compare-angular:build"
+            "browserTarget": "copmare-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "compare-angular:build:production"
+              "browserTarget": "copmare-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "compare-angular:build"
+            "browserTarget": "copmare-angular:build"
           }
         },
         "test": {
@@ -93,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.sass"
             ],
             "scripts": []
           }
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "compare-angular:serve"
+            "devServerTarget": "copmare-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "compare-angular:serve:production"
+              "devServerTarget": "copmare-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "compare-angular"
+  "defaultProject": "copmare-angular"
 }

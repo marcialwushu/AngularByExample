@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'compare-angular'`, () => {
+  it(`should have as title 'copmare-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('compare-angular');
+    expect(app.title).toEqual('copmare-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('compare-angular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('copmare-angular app is running!');
   });
 });
