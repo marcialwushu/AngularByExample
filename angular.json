@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "../node_modules/bulma/bulma.sass",
+              "node_modules/bulma/css/bulma.min.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -94,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "../node_modules/bulma/bulma.sass",
               "src/styles.sass"
             ],
             "scripts": []
