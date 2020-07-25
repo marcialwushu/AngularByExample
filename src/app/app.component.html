@@ -1,5 +1,42 @@
 
-HEADER
+<div id="app">
+  <nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">MyCompany</a>
+    <div class="navbar-burger burger" v-on:click="showNav" v-bind:class="{ 'is-active': isActive }">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu" v-bind:class="{ 'is-active': isActive }">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable"></div>
+    </div>
+
+    <div class="navbar-end">
+
+    <a routerLink="/" class="navbar-item">Home</a>
+    <a routerLink="faq" class="navbar-item">Feature</a>
+    <a routerLink="faq" class="navbar-item">About</a>
+    <a routerLink="faq" class="navbar-item">FAQ</a>
+      <div class="navbar-item">
+        <div class="field is-grouped">
+
+          <p class="control">
+            <a class="button is-primary is-outlined" href="">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Join Now</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
 
 <router-outlet></router-outlet>
